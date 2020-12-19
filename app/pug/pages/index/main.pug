@@ -1,0 +1,54 @@
+section.b-main.section
+	.container
+		.row
+			.col-12.col-lg-8
+				h1._title.main-title Проверка задолженности ФССП по фамилии - онлайн проверка долгов у судебных приставов
+				._desc.md-desc.main-desc Чтобы узнать свою задолженность по фамилии, выполните проверку и розыск по базе ФССП через официальный сервис РосДолги. Проверка долгов проводится по физ. лицам или юр лицам. Судебные приставы публикуют в открытом доступе информацию о всех задолженностях
+			.col-12.col-lg-4.d-none.d-lg-block
+				.b-main-logo
+					._img-wrap
+						img._img(src="img/logo/main-logo.svg" alt="")
+					._text Источник информации является реестр должников судебных приставов
+		.row
+			.main-col.main-col--left
+				form.b-main-form.form
+					.b-input
+						span._text Ваше ФИО
+						input._input(type="text" name="fullname" placeholder="Иванов Иванович Иван")
+					.input-row
+						.input-col
+							+birth-date-input
+						.input-col
+							.b-select-wrap._select
+								span._text Ваш регион
+								select(name="region" data-placeholder="Выберите регион" data-search-not-found="Совпадений не найдено")
+									option
+									option Алтайский край
+									option Архангельская область и Ненецкий автономный округ
+									option Белгородская область
+									option Забайкальский край
+									option Калужская область
+					.input-row
+						.input-col
+							button.b-btn._btn
+								span._text Узнать задолженность
+								span._icon-wrap
+									+icon('arrow-right')
+						.input-col
+							.b-agreement-text Нажимая на кнопку, Вы соглашаетесь с правилами пользования сайта и
+								a._link(href="#") обработки персональных данных
+			.main-col.main-col--right
+				.b-debt-desk
+					ul._list
+						li._item
+							._icon-wrap
+								img._icon(src="img/icons/hands.svg" alt="")
+							._text Проверить наличие задолженности по фамилии
+						li._item
+							._icon-wrap
+								img._icon(src="img/icons/credit-card.svg" alt="")
+							._text Погасите задолженность онлайн любым удобным способом
+						li._item
+							._icon-wrap
+								img._icon(src="img/icons/checklist.svg" alt="")
+							._text Получите квитанцию <br>об оплате на почту

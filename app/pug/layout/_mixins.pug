@@ -13,4 +13,30 @@ mixin input(type, name, dataName, placeholder, required)
 //- textarea
 mixin textarea(name, dataName, placeholder, required)
 	.input-wrap
-		textarea(name=name, data-name=dataName, cols="30", rows="5" placeholder=placeholder, required=required)
+		textarea(name=name, data-name=dataName, cols="30" rows="5" placeholder=placeholder, required=required)
+
+
+//- Breadcrumb
+mixin breadcrumbs(itemsArr)
+	.b-breadcrumbs
+		.container
+			.row
+				ul._list
+					li._item
+						a(href="/")._link
+							+icon('house')
+					each item, index in itemsArr
+						if itemsArr.length === index + 1
+							li._item
+								span= item.title
+						else
+							li._item
+								a(href=item.path)._link= item.title
+
+mixin birth-date-input
+	.b-input.-with-icon
+		._text Дата рождения
+		._input-wrap
+			input(type='text' name='birthDate' placeholder='01.01.1985' data-toggle='datepicker' autocomplete='off')
+			._icon-wrap
+				+icon('calendar')

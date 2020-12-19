@@ -1,23 +1,99 @@
 footer.b-footer
-	.container
-		.row
-			.col
-				p Footer
+	._top-line
+		.container
+			.row
+				._col.-first
+					a.b-logo.-white(href="index.html")
+						span._img-wrap
+							img._img(src="img/logo/logo.svg" alt="")
+						span._title-wrap
+							span._title dolgi.net
+							span._desc - онлайн проверка задолженностей
+				._col.-second
+					.row._row
+						._col
+							._title Сервисы
+							nav.b-footer-nav
+								ul._list
+									li._item
+										a._link(href="check-travel-ban.html") Проверить запрет на выезд за границу
+									li._item
+										a._link(href="#") Проверить паспорт на действительность
+									li._item
+										a._link(href="#") Узнать ИНН по паспорту
+									li._item
+										a._link(href="tax-debt-checker.html") Проверить налоги
+									li._item
+										a._link(href="debt.html") Узнать задолженность
+						._col
+							._title Информация
+							nav.b-footer-nav
+								ul._list
+									li._item
+										a._link(href="contacts.html") Контакты
+									li._item
+										a._link(href="news.html") Новости
+									li._item
+										a._link(href="payment-info.html") Способ оплаты
+						._col
+							._title Тех. поддержка
+							._links-wrap
+								a._big-link.-phone(href="tel:+74995461133") +7 (499) 546-11-33
+								a._big-link.-email(href="mailto:info@dolgi.net") info@dolgi.net
+							._title.mb-20 Поделиться
+							nav.b-social-nav
+								ul._list
+									li._item
+										a._link(href="#")
+											+icon('vk')
+									li._item
+										a._link(href="#")
+											+icon('fb')
+									li._item
+										a._link(href="#")
+											+icon('ok')
+
+						._col
+							._clone-links
+								._icon-wrap
+									+icon('https')
+								._politics-wrap
+									a._link(href="politics.html") Политика конфиденциальности
+									a._link(href="agreement.html") Пользовательское соглашение
+
+	._bottom-line
+		.container
+			.row
+				._col.-first
+					._text dolgi.net.© 2016-2020
+				._col.-second
+					._wrap
+						._icon-wrap
+							+icon('https')
+						._politics-wrap
+							a._link(href="politics.html") Политика конфиденциальности
+							a._link(href="agreement.html") Пользовательское соглашение
 
 
 |
 |
 |
 // Request popup
-.b-mfp.-request-popup.zoom-anim-dialog.mfp-hide#request
+.b-mfp.-notification-popup.zoom-anim-dialog.mfp-hide#notification-popup
 	form._form
-		+input('text','name','Имя','Ваше имя', true)
-		+input('text','phone','Телефон','Телефон', false)
-		button.btn Send
-		.b-form-result
-			.b-mess
-				._title Success!
-				._desc We will contact with you soon
+		h2._title Уважаемый Козлов Сергей Васильевич <br>По вашему запросу активных задолженностей не найдено
+		._desc.lg-desc Подпишитесь на уведомления, чтобы получать информацию о новых активных задолженностях, налогах и штрафах ГИБДД.
+		._wrap
+			._row
+				._col
+					._small-text.sm-desc Мы будет оправлять вам на почту напоминания,<br> если появились новые задолженности
+					.b-input._input
+						input._input(type="text" name="email" placeholder="Введите ваш e-mail")
+				._col
+					button.b-btn.-subscribe._btn
+						span._text Подписаться
+						._icon-wrap
+							+icon('plane')
 
 |
 |

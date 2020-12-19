@@ -1,5 +1,79 @@
 header.b-header
 	.container
-		.row
-			.col
-				p Header
+		.row._top-line
+			._col.-left
+				a.b-logo(href="index.html")
+					span._img-wrap
+						img._img(src="img/logo/logo.svg" alt="")
+					span._title-wrap
+						span._title dolgi.net
+						span._desc - онлайн проверка задолженностей
+			._col.-right
+				._nav-wrap
+					nav.b-nav-line._nav-line
+						ul._list
+							li._item
+								a._link.lined-link(href="news.html") Новости
+							li._item
+								a._link.lined-link(href="contacts.html") Контакты
+					a.b-trs-btn._trs-btn.js-popup(href="#notification-popup")
+						span._icon-wrap
+							img._icon(src="img/icons/lock.svg" alt="")
+						span._text Личный кабинет
+					button.b-hamburger.-slider.js-menu(type='button')
+						span.hamburger-box
+							span.hamburger-inner
+	._bottom-line
+		.container
+			.row._row
+				.col._nav-col
+					nav.b-nav
+						ul._list
+							li._item
+								a._link(href="#") Узнать ИНН
+							li._item.-active
+								a._link(href="index.html") Задолженности ФССП
+							li._item
+								a._link(href="debt.html") Налоги ФНС
+							li._item
+								a._link(href="#") Проверить паспорт
+							li._item
+								a._link(href="check-travel-ban.html") Запрет на выезд
+	.b-mobile-menu
+		.container
+			._top-line
+				h2._title Меню
+			._center-line
+				nav.b-nav
+					ul._list
+						li._item
+							a._link(href="#") Узнать ИНН
+						li._item.-active
+							a._link(href="index.html") Задолженности ФССП
+						li._item
+							a._link(href="debt.html") Налоги ФНС
+						li._item
+							a._link(href="#") Проверить паспорт
+						li._item
+							a._link(href="check-travel-ban.html") Запрет на выезд
+						li._item
+							a._link(href="news.html") Новости
+						li._item
+							a._link(href="contacts.html") Контакты
+			._bottom-line
+				._small-text Тех поддержка
+				._link-wrap
+					a._link.-phone(href="tel:+74995461133") +7 (499) 546-11-33
+					a._link.-email(href="mailto:info@dolgi.ne") info@dolgi.ne
+				nav.b-social-nav.-green
+					ul._list
+						li._item
+							a._link(href="#")
+								+icon('vk')
+						li._item
+							a._link(href="#")
+								+icon('fb')
+						li._item
+							a._link(href="#")
+								+icon('ok')
+
