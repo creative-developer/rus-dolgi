@@ -1,28 +1,54 @@
 ////////// Default btn
-.btn
+.accent-btn
 	position: relative
-	display: inline-block
-	font-size: 14px
-	border-radius: 4px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 600
+	font-size: 17px
+	line-height: 17px
 	color: #fff
 	text-align: center
 	text-decoration: none
-	padding: 10px 30px
-	background-color: $c1
+	padding: 15.5px 30px
+	background-color: $accent
 	border: none
 	outline: none
 	transition: all .3s ease
+	white-space: nowrap
+	border-radius: 2px
 	&:focus:not(.disabled),
 	&:hover:not(.disabled)
 		outline: none
 		cursor: pointer
 		color: #fff
 		text-decoration: none
-		background-color: lighten($c1, 10%)
+		background-color: $hover
 	&:active:not(.disabled)
-		background-color: darken($c1, 5%)
+		background-color: #018F60
 
 	&.disabled
 		opacity: .4
-		
-	user-select: none
+
+		user-select: none
+	&--left-icon
+		.accent-btn
+			&__icon-wrap
+				margin-right: 8px
+
+	&--full-width
+		width: 100%
+
+	&__icon-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 16px
+		height: 16px
+		min-width: 16px
+		min-height: 16px
+		svg
+			fill: #fff
+			width: 100%
+			height: 100%
+			transition: all 0.3s ease

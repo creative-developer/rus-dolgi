@@ -1,0 +1,26 @@
+.datepicker-panel>ul>li
+	color: $c2
+	&:hover
+		background: $accent
+		color: #fff
+	&.picked
+		color: #fff !important
+		&:hover
+			color: $accent
+	&.highlighted
+		background: $accent
+		color: #fff !important
+		&:hover
+			background: lighten($accent, 10%)
+
+	&.picked, .datepicker-panel>ul>li.picked:hover
+		color: $accent
+
+.datepicker-panel ul[data-view="week"] li
+	&:hover
+		color: $accent
+.datepicker-top-left:before, .datepicker-top-right:before
+	border-bottom-color: $accent
+
+.datepicker-top-left, .datepicker-top-right
+	border-top-color: $accent

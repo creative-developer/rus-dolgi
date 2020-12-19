@@ -1,0 +1,86 @@
+.main-form
+	background: #fff
+	padding: 54px 36px 60px 50px
+
+	&__title
+		margin-bottom: 19px
+
+	&__row
+		display: flex
+
+	&__col
+		&--left
+			flex-basis: 81.6%
+			max-width: 81.6%
+			padding-right: 56px
+		&--right
+			flex-basis: 18.4%
+			max-width: 18.4%
+
+	&__input-row
+		display: flex
+		align-items: center
+		margin: 0 -10px
+		margin-bottom: 20px
+
+	&__input-col
+		padding: 0 10px
+		&:nth-child(1)
+			flex-basis: 32.94%
+			max-width: 32.94%
+		&:nth-child(2)
+			flex-basis: 43.53%
+			max-width: 43.53%
+		&:nth-child(3)
+			flex-basis: 23.53%
+			max-width: 23.53%
+
+	&__bottom
+		&-row
+			display: flex
+			align-items: center
+			margin: 0 -20px
+
+		&-col
+			padding: 0 20px
+			&--left
+				flex-basis: 54%
+				max-width: 54%
+			&--right
+				flex-basis: 46%
+				max-width: 46%
+
+	&__logo-wrap
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-top: 28px
+		padding-left: 26px
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			width: 1px
+			height: 100%
+			background: #E6E6E6
+			transform: translateY(-50%)
+
+	&__img
+		&-wrap
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 54px
+			height: 58px
+			margin-bottom: 24px
+
+	&__text
+		font-size: 12px
+		line-height: 15px
+		text-align: center
+		color: $c3
+		max-width: 173px
+
+	&__agreement

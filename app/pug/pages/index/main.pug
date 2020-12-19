@@ -3,8 +3,45 @@ section.b-main.section
 		.row
 			.col-12.col-lg-12
 				h1._title.main-title Узнать задолженность у судебных приставов онлайн
-				._desc
-					p  Узнать задолженность у судебных приставов онлайн
-					p  Узнать задолженность у судебных приставов онлайн
-				button.btn._btn Узнать задолженность у судебных приставов онлайн
-				input.input(type="text")
+				._desc.xxl-body
+					p Проверка долгов по фамилии у приставов по базе ФССП. Укажите фамилию, имя и отчество и нажмите проверить долги. <br>В режиме онлайн будет проведена проверка задолженностей по фамилии. Проверьте долги, чтобы узнать о своих задолженностях.
+				.b-main-form
+					form
+						._row
+							._col.-left
+								h3._title Бесплатная проверка долгов
+								._input-row
+									._input-col
+										.b-select._select
+											span._label Регион
+											select(name="region" data-placeholder="Выберите регион" data-search-not-found="Совпадений не найдено")
+												option
+												option Алтайский край
+												option Архангельская область и Ненецкий автономный округ
+												option Белгородская область
+												option Забайкальский край
+												option Калужская область
+									._input-col
+										.b-input
+											span._text ФИО
+											input._input(type="text" name="fullname" placeholder="Например Сергей Сергеевич Сергеев")
+									._input-col
+										+birth-date-input
+								._bottom-row
+									._bottom-col.-left
+										.b-agreement._agreement
+											label.b-checkbox
+												input(type="checkbox" name="agreement" required checked)
+												span._icon-wrap
+													+icon('check')
+												span._text Нажимая на кнопку, вы соглашаетесь с правилами пользования сайта и правилами обработки <a href="#" class="accent-link">персональных данных</a>
+									._bottom-col.-right
+										button.b-accent-btn.-left-icon.-full-width._btn
+											span._icon-wrap
+												+icon('search')
+											span._text Проверить задолженность
+							._col.-right
+								._logo-wrap
+									._img-wrap
+										img._img(src="img/main/main-logo.png" alt="")
+									._text Вся информация предоставляется из базы данных Федеральной службы судебных приставов

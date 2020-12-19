@@ -5,7 +5,18 @@ body
 	line-height: 1.65
 	overflow-x: hidden
 	-webkit-font-smoothing: antialiased
-	color: #1F2429
+	color: $c1
+
+// потом нужно убрать 
+// ********************
+::-webkit-scrollbar
+	width: 0
+	-ms-overflow-style: none
+	overflow: -moz-scrollbars-none
+
+.chromeperfectpixel-panel-ads
+	display: none !important
+// ********************
 
 html,
 body
@@ -21,8 +32,5 @@ body
 	+sm
 
 ////////// Modules
-@import ./modules/buttons
-@import ./modules/typoghraphy
-@import ./modules/form
-@import ./modules/popups
-@import ./modules/mfp-zoom
+@import ./modules/_all
+@import ./blocks/_all

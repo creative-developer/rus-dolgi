@@ -1,0 +1,132 @@
+// Custom select
+.select
+	position: relative
+	width: 100%
+	select.valid
+		& + .jq-selectbox__select
+			border-color: $accent
+			background: #fff
+	select.error
+		& + .jq-selectbox__select
+			border-color: $warningColor
+			background: #fff
+
+	&__label
+		display: inline-block
+		font-size: 15px
+		line-height: 19px
+		color: $c1
+		margin-bottom: 6px
+
+.jq-selectbox
+	height: 100% !important
+	width: 100%
+	transition: all .3s ease
+	max-width: 100%
+	z-index: 1 !important
+	&.opened
+		.jq-selectbox
+			&__select
+			&__trigger
+				svg
+					fill: $accent
+					transform: rotate(-180deg)
+
+	&.focused
+		.jq-selectbox
+			&__select
+
+	&__select
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 15px
+		line-height: 15px
+		color: $c1
+		background: #fff
+		overflow: hidden
+		border-radius: 3px
+		padding: 15.5px 17px
+		border: 1px solid $c3
+		cursor: pointer
+		transition: all .3s ease
+		max-width: 100%
+		&:hover
+			border-color: $accent
+		+lg
+			padding: 14px 17px
+		&-text
+			&.placeholder
+				color: #BABABA
+
+	&__trigger
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		z-index: 1
+		svg
+			width: 11px
+			height: 6px
+			fill: $c3
+			transition: all 0.3s ease
+
+	&__dropdown
+		width: 100%
+		font-size: 15px
+		line-height: 15px
+		padding: 0
+		background: #fff
+		max-width: 100%
+		ul
+			max-height: 188px !important
+			padding: 17px 5px 17px 5px
+			border-radius: 3px
+			border: 1px solid $accent
+			margin-top: -1px
+			li
+				position: relative
+				padding: 9.5px 12px
+				font-size: 16px
+				line-height: 16px
+				color: $c1
+				cursor: pointer
+				overflow: hidden
+				border-radius: 3px
+				text-overflow: ellipsis
+				transition: all .3s ease
+				&:hover
+					background: $accent
+					color: #fff
+
+	&__search
+		position: absolute
+		top: -48px
+		left: 0
+		width: 100%
+		+lg
+			top: -48px
+		input
+			display: flex
+			align-items: center
+			justify-content: space-between
+			font-size: 15px
+			line-height: 15px
+			color: $c1
+			background: #fff
+			padding: 13.5px 17px
+			border-radius: 3px
+			border: 1px solid $accent
+			cursor: pointer
+			overflow: hidden
+			transition: all .3s ease
+			+lg
+				padding: 14px 17px
+
+	&__not-found
+		position: absolute
+		padding: 10px 24px
+		font-size: 15px
+		line-height: 15px
+		+lg
+			padding: 10px 17px

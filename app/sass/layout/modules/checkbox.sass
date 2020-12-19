@@ -1,0 +1,63 @@
+.checkbox
+	display: inline-flex
+	align-items: center
+	font-weight: normal
+	font-size: 13px
+	line-height: 15px
+	color: $c3
+	margin-bottom: 0
+	cursor: pointer
+	user-select: none
+	transition: all 0.3s ease
+	&--small
+		font-size: 15px
+		line-height: 18px
+	&:hover
+		.checkbox__icon-wrap
+			svg
+				transform: scale(1)
+	input
+		position: absolute
+		visibility: hidden
+		width: 0
+		height: 0
+		opacity: 0
+		&:checked ~ .checkbox__icon-wrap
+			background: $accent
+			border-color: $accent
+			svg
+				fill: #fff
+				transform: scale(1)
+		&.error ~
+			.checkbox__icon-wrap
+				border-color: $warningColor
+				svg
+					fill: $warningColor
+			.checkbox__text
+				color: $warningColor
+				a
+					color: $warningColor
+
+	&__icon-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 21px
+		height: 21px
+		min-width: 21px
+		min-height: 21px
+		border-radius: 2px
+		background: #fff
+		transition: all 0.3s ease
+		border: 1px solid $c3
+		svg
+			fill: $c3
+			width: 10px
+			height: 8px
+			min-width: 10px
+			min-height: 8px
+			transform: scale(0)
+			transition: all 0.3s ease
+
+	&__text
+		margin-left: 15px

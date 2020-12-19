@@ -1,44 +1,27 @@
 header.b-header
 	.container
-		//- .row._top-line
+		.row._row
 			._col.-left
-				a.b-logo(href="index.html")
-					span._img-wrap
-						img._img(src="img/logo/logo.svg" alt="")
-					span._title-wrap
-						span._title dolgi.net
-						span._desc - онлайн проверка задолженностей
+				.b-logo.-hor
+					a._link(href="index.html")
+						span._img-wrap
+							img._img(src="img/logo/logo.svg" alt="")
+						span._title РусДолги
+					._desc Онлайн-сервис проверки задолженности по судебным приставам
 			._col.-right
 				._nav-wrap
-					nav.b-nav-line._nav-line
-						ul._list
-							li._item
-								a._link.lined-link(href="news.html") Новости
-							li._item
-								a._link.lined-link(href="contacts.html") Контакты
-					a.b-trs-btn._trs-btn.js-popup(href="#notification-popup")
-						span._icon-wrap
-							img._icon(src="img/icons/lock.svg" alt="")
-						span._text Личный кабинет
-					button.b-hamburger.-slider.js-menu(type='button')
-						span.hamburger-box
-							span.hamburger-inner
-	//- ._bottom-line
-		.container
-			.row._row
-				.col._nav-col
 					nav.b-nav
 						ul._list
 							li._item
-								a._link(href="#") Узнать ИНН
-							li._item.-active
-								a._link(href="index.html") Задолженности ФССП
+								a._link(href="#") Узнать задолженность
 							li._item
-								a._link(href="debt.html") Налоги ФНС
+								a._link(href="check-travel-ban.html") Проверить запрет на выезд
 							li._item
-								a._link(href="#") Проверить паспорт
-							li._item
-								a._link(href="check-travel-ban.html") Запрет на выезд
+								a._link(href="#contacts") Контакты
+					button.b-hamburger.-slider.js-menu(type='button' style='display: none')
+						span.hamburger-box
+							span.hamburger-inner
+
 	//- .b-mobile-menu
 		.container
 			._top-line
