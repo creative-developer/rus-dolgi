@@ -1,78 +1,44 @@
 footer.b-footer
-	._top-line
-		.container
-			//- .row
-				._col.-first
-					a.b-logo.-white(href="index.html")
+	.container
+		.row._top-row
+			._col.-left
+				.b-logo.-ver
+					a._link(href="index.html")
 						span._img-wrap
 							img._img(src="img/logo/logo.svg" alt="")
-						span._title-wrap
-							span._title dolgi.net
-							span._desc - онлайн проверка задолженностей
-				._col.-second
-					.row._row
-						._col
-							._title Сервисы
-							nav.b-footer-nav
-								ul._list
-									li._item
-										a._link(href="check-travel-ban.html") Проверить запрет на выезд за границу
-									li._item
-										a._link(href="#") Проверить паспорт на действительность
-									li._item
-										a._link(href="#") Узнать ИНН по паспорту
-									li._item
-										a._link(href="tax-debt-checker.html") Проверить налоги
-									li._item
-										a._link(href="debt.html") Узнать задолженность
-						._col
-							._title Информация
-							nav.b-footer-nav
-								ul._list
-									li._item
-										a._link(href="contacts.html") Контакты
-									li._item
-										a._link(href="news.html") Новости
-									li._item
-										a._link(href="payment-info.html") Способ оплаты
-						._col
-							._title Тех. поддержка
-							._links-wrap
-								a._big-link.-phone(href="tel:+74995461133") +7 (499) 546-11-33
-								a._big-link.-email(href="mailto:info@dolgi.net") info@dolgi.net
-							._title.mb-20 Поделиться
-							nav.b-social-nav
-								ul._list
-									li._item
-										a._link(href="#")
-											+icon('vk')
-									li._item
-										a._link(href="#")
-											+icon('fb')
-									li._item
-										a._link(href="#")
-											+icon('ok')
-
-						._col
-							._clone-links
-								._icon-wrap
-									+icon('https')
-								._politics-wrap
-									a._link(href="politics.html") Политика конфиденциальности
-									a._link(href="agreement.html") Пользовательское соглашение
-
-	//- ._bottom-line
-		.container
-			.row
-				._col.-first
-					._text dolgi.net.© 2016-2020
-				._col.-second
-					._wrap
-						._icon-wrap
-							+icon('https')
-						._politics-wrap
-							a._link(href="politics.html") Политика конфиденциальности
-							a._link(href="agreement.html") Пользовательское соглашение
+						span._title РусДолги
+					._desc Онлайн-сервис проверки задолженности по судебным приставам
+			._col.-center
+				h5._title Сервис проверки судебных задолженностей rosdolgi.ru 2020
+				._desc.xsm-body
+					p Информация по задолженности от судебных приставов формируются автоматически на основе запроса по данным пользователя в официальную базу ФССП. Проверка долгов граждан осуществляется бесплатно. Интернет-портал позволяет узнать задолженности в режиме онлайн. Копирование любой информации о долгах запрещено. Цитирование с сайта разрешается при наличии активной ссылки.
+			._col.-right
+				._nav-wrap
+					a.b-email._email(href="mailto:info@rudolgi.com")
+						span._icon-wrap
+							+icon('email')
+						span._text info@rudolgi.com
+					nav.b-nav.-ver
+						ul._list
+							li._item
+								a._link(href="#") Узнать задолженность
+							li._item
+								a._link(href="check-travel-ban.html") Проверить запрет на выезд
+							li._item
+								a._link(href="#contacts") Контакты
+		.row._bottom-row
+			._col.-first
+				._text dolgi.net.© 2016-2020
+			._col.-second
+				._icons-wrap
+					._icon-wrap
+						img._img(src="img/icons/ssl.svg" alt="")
+					._icon-wrap
+						img._img(src="img/icons/cards.svg" alt="")
+			._col.-third
+				._politics-wrap
+					a._link(href="politics.html") Политика конфиденциальности
+					a._link(href="agreement.html") Пользовательское соглашение
 
 
 |
