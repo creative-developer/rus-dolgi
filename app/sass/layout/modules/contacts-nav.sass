@@ -1,0 +1,55 @@
+.contacts-nav
+	&__list
+	&__item
+		&:not(:last-child)
+			margin-bottom: 72px
+
+	&__title
+		line-height: 24px
+		margin-bottom: 6px
+
+	&__sub-title
+		margin-bottom: 25px
+		color: #53585C
+
+	&__row
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+	&__col
+		&--left
+			margin-right: 18px
+		&--right
+			display: flex
+			align-items: center
+
+	&__icon-wrap
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 20px
+		height: 20px
+		min-width: 20px
+		min-height: 20px
+		svg
+			fill: $accent
+			width: 100%
+			height: 100%
+
+	&__link
+		&--phone
+			font-weight: 600
+			font-size: 17px
+			line-height: 32px
+			color: $c1
+
+	&__text
+		line-height: 32px
+
+	&__item-title
+		font-weight: 600
+		font-size: 17px
+		line-height: 32px
+		color: $c1
+		margin-right: 3px

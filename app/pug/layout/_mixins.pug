@@ -20,18 +20,16 @@ mixin textarea(name, dataName, placeholder, required)
 mixin breadcrumbs(itemsArr)
 	.b-breadcrumbs
 		.container
-			.row
-				ul._list
-					li._item
-						a(href="/")._link
-							+icon('house')
-					each item, index in itemsArr
-						if itemsArr.length === index + 1
-							li._item
-								span= item.title
-						else
-							li._item
-								a(href=item.path)._link= item.title
+			ul._list
+				li._item
+					a(href="index.html")._link.accent-link Главная
+				each item, index in itemsArr
+					if itemsArr.length === index + 1
+						li._item
+							span= item.title
+					else
+						li._item
+							a(href=item.path)._link.accent-link= item.title
 
 mixin birth-date-input
 	.b-input.-with-icon

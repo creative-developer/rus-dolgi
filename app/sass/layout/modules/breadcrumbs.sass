@@ -1,0 +1,24 @@
+.breadcrumbs
+	margin-bottom: 37px
+	&__list
+		display: flex
+		align-items: center
+	&__item
+		position: relative
+		font-size: 13px
+		line-height: 13px
+		color: $c3
+		&:not(:last-child)
+			margin-right: 31px
+		&:not(:first-child)
+			&:after
+				content: '/'
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: -18px
+				width: 100%
+				height: 100%
+				font-size: 13px
+				line-height: 13px
+				color: #E8E8E8
