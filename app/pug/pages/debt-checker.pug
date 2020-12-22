@@ -1,0 +1,12 @@
+extend ../layout/template
+
+block head
+	- var title = 'Проверить долги по фамилии - ФССП | РусДолги'
+	|
+	|
+block header
+	- var headerModify = 'header--other'
+block content
+	main.contacts-page
+		// Sections
+		include ./debt-checker/main
