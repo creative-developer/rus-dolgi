@@ -36,7 +36,7 @@ function jsLibs() {
     'app/libs/jquery-validation/dist/jquery.validate.min.js',
     'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
     'app/libs/jQuery-Plugin-For-matchMedia-API/dist/jquery.matchMedia.js',
-    // 'app/libs/fancybox/dist/jquery.fancybox.min.js',
+    'app/libs/fancybox/dist/jquery.fancybox.min.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -51,7 +51,7 @@ function cssLibs() {
     'app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
     'app/libs/datepicker/dist/datepicker.min.css',
     'app/libs/jQueryFormStyler/jquery.formstyler.css',
-    // 'app/libs/fancybox/dist/jquery.fancybox.css',
+    'app/libs/fancybox/dist/jquery.fancybox.css',
   ])
     .pipe(concat('libs.min.css'))
     .pipe(autoprefixer(['last 10 versions']))
@@ -157,10 +157,21 @@ function svgSprite() {
 watch(['app/sass/**/*.sass', '!app/sass/libs/libs.sass'], css)
 watch('app/sass/libs.sass', cssLibs)
 watch('app/pug/**/*.pug', html)
-watch(['app/js/main.js', 'app/js/modules/*.js', 'app/js/mediaQueries/*.js'], minJs)
+watch(
+  ['app/js/main.js', 'app/js/modules/*.js', 'app/js/mediaQueries/*.js'],
+  minJs,
+)
 watch('app/img/svg-sprite/*.svg', svgSprite)
 
 exports.minJs = minJs
 
 // Export tasks
-exports.default = parallel(jsLibs, minJs, cssLibs, css, html, svgSprite, browserSync)
+exports.default = parallel(
+  jsLibs,
+  minJs,
+  cssLibs,
+  css,
+  html,
+  svgSprite,
+  browserSync,
+)

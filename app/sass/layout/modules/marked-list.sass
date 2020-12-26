@@ -1,0 +1,16 @@
+.marked-list
+	padding-top: 2px
+	&__item
+		position: relative
+		padding-left: 26px
+		&:not(:last-child)
+			margin-bottom: 10px
+		&:after
+			content: ''
+			position: absolute
+			top: 9px
+			left: 4px
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			background: $accent

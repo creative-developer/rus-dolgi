@@ -1,0 +1,12 @@
+extend ../layout/template
+
+block head
+	- var title = 'Как проверить запрет на выезд за границу | РусДолги'
+	|
+	|
+block header
+	- var headerModify = 'header--other'
+block content
+	main.contacts-page
+		// Sections
+		include ./check-travel-ban/main
