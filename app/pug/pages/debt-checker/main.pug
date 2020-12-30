@@ -3,8 +3,33 @@ section.b-debt-checker
 	.container
 		h1._title Проверить долги по фамилии - ФССП
 		._sub-title.xxl-body Проверка долгов по фамилии у приставов по базе ФССП. Укажите фамилию, имя и отчество и нажмите проверить долги. В режиме онлайн будет проведена проверка задолженностей по фамилии. Проверьте долги, чтобы узнать о своих задолженностях.
-		a._link.accent-link(href="#")
+		a.b-arrow-link._link(href="#")
 			span._icon-wrap
 				+icon('arrow')
-			span._link-text Новый поиск задолженности
-
+			span._text Новый поиск задолженности
+		.b-debt-checker-form
+			._header
+				._header-row
+					._header-col.-left
+						.b-text._text
+							._title Всего найдено записей:
+							._value 4
+						ul.b-data-info
+							li._item
+								._title.xl-body Результаты по данным:
+								._value.xxl-body Филиппова Людмила Викторовна , 05.04.1955 гр.
+							li._item
+								._title.xl-body Регион поиска:
+								._value.xxl-body Алтайский край
+					._header-col.-right
+						.b-info-logo
+							._header
+								._icon-wrap
+									+icon('calendar')
+								._icon-text Данные актуальны на 20.11.2020
+							._content
+								._img-wrap
+									img._img(src="img/main/main-logo.png" alt="")
+								._desc Данные о задолженностях предоставляются из базы Федеральной службы судебных приставов
+			._content
+			._footer
