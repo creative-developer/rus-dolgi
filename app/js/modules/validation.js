@@ -16,10 +16,6 @@ jQuery.validator.setDefaults({
       required: true,
       birthDate: true,
     },
-    passportSeries: {
-      required: true,
-      passportSeries: true,
-    },
     email: {
       required: true,
       email: true,
@@ -30,40 +26,6 @@ jQuery.validator.setDefaults({
     phone: {
       required: true,
       phone: true,
-    },
-    name: {
-      required: true,
-      minlength: 2,
-      cyryllic: true,
-    },
-    middlename: {
-      required: true,
-      minlength: 2,
-      cyryllic: true,
-    },
-    surname: {
-      required: true,
-      minlength: 2,
-      cyryllic: true,
-    },
-    inn: {
-      required: true,
-      inn: true,
-    },
-    driverCert: {
-      required: true,
-      driverCert: true,
-    },
-    stateSign: {
-      required: true,
-      stateSign: true,
-    },
-    vehicleCertificate: {
-      required: true,
-      vehicleCertificate: true,
-    },
-    pay_method: {
-      required: true,
     },
   },
   messages: {

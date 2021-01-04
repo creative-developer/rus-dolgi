@@ -130,16 +130,17 @@ section.b-debt-checker
 								+icon('arrow')
 				include ../../layout/modules/warning-banner
 			._footer
-				._footer-row
-					._footer-col.-left
-						._input-wrap
-							.b-input._input
-								input._input(type="text" name="fullname" placeholder="Введите E-mail")
-							button.b-btn.-yellow.-small._yellow-btn Напомнить о долгах
-							._small-text.xsm-body Раз в месяц мы будем напоминать вам <br>о проверках ваших задолженностей
-					._footer-col.-right
-						a.b-btn.-accent.-left-icon.-full-width._accent-btn(href="#")
-							span._icon-wrap
-								+icon('search')
-							span._text Выполнить новый поиск
+				form.reminder-form
+					._footer-row
+						._footer-col.-left
+							._input-wrap
+								.b-input._input
+									input._input(type="text" name="email" placeholder="Введите E-mail")
+								button.b-btn.-yellow.-small._yellow-btn Напомнить о долгах
+								._small-text.xsm-body Раз в месяц мы будем напоминать вам <br>о проверках ваших задолженностей
+						._footer-col.-right
+							a.b-btn.-accent.-left-icon.-full-width._accent-btn(href="#")
+								span._icon-wrap
+									+icon('search')
+								span._text Выполнить новый поиск
 

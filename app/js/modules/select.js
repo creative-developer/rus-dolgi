@@ -7,25 +7,19 @@ export const addSelectArrow = () => {
 }
 
 export const customSelectInit = () => {
-  const selectInit = () => {
-    $('select').styler({
-      selectSearch: true,
-      selectSearchLimit: 6,
-      selectPlaceholder: 'Выберите регион',
-      selectSmartPositioning: false,
-      onSelectOpened: function () {
-        // $(this).find(".jq-selectbox__search input").focus();
-      },
-      onSelectClosed: function () {
-        // validator.element('select')
-      },
-      onFormStyled: function () {
-        addSelectArrow()
-      },
-    })
-  }
-  // $('.select__label').click(() => {
-  //   selectInit()
-  // })
-  selectInit()
+  $('select').styler({
+    selectSearch: true,
+    selectSearchLimit: 6,
+    selectPlaceholder: 'Выберите регион',
+    selectSmartPositioning: false,
+    onSelectOpened: function () {
+      $(this).find('.jq-selectbox__search input').focus()
+    },
+    onSelectClosed: function () {
+      validator.element('select')
+    },
+    onFormStyled: function () {
+      addSelectArrow()
+    },
+  })
 }
