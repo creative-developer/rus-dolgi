@@ -10,7 +10,7 @@ header.b-header(class=headerModify)
 					._desc Онлайн-сервис проверки задолженности по судебным приставам
 			._col.-right
 				._nav-wrap
-					nav.b-nav
+					nav.b-nav._nav
 						ul._list
 							li._item
 								a._link(href="debt-checker.html") Узнать задолженность
@@ -18,45 +18,26 @@ header.b-header(class=headerModify)
 								a._link(href="check-travel-ban.html") Проверить запрет на выезд
 							li._item
 								a._link(href="contacts.html") Контакты
-					button.b-hamburger.-slider.js-menu(type='button' style='display: none')
+					button.b-hamburger.-slider.js-menu(type='button')
 						span.hamburger-box
 							span.hamburger-inner
 
-	//- .b-mobile-menu
-		.container
-			._top-line
-				h2._title Меню
-			._center-line
-				nav.b-nav
-					ul._list
-						li._item
-							a._link(href="#") Узнать ИНН
-						li._item.-active
-							a._link(href="index.html") Задолженности ФССП
-						li._item
-							a._link(href="debt.html") Налоги ФНС
-						li._item
-							a._link(href="#") Проверить паспорт
-						li._item
-							a._link(href="check-travel-ban.html") Запрет на выезд
-						li._item
-							a._link(href="news.html") Новости
-						li._item
-							a._link(href="contacts.html") Контакты
-			._bottom-line
-				._small-text Тех поддержка
-				._link-wrap
-					a._link.-phone(href="tel:+74995461133") +7 (499) 546-11-33
-					a._link.-email(href="mailto:info@dolgi.ne") info@dolgi.ne
-				nav.b-social-nav.-green
-					ul._list
-						li._item
-							a._link(href="#")
-								+icon('vk')
-						li._item
-							a._link(href="#")
-								+icon('fb')
-						li._item
-							a._link(href="#")
-								+icon('ok')
+	.b-mobile-menu
+		.container._container
+			._wrap
+				._top-line
+					nav.b-nav.-ver.-mobile._nav
+						ul._list
+							li._item
+								a._link(href="debt-checker.html") Узнать задолженность
+							li._item
+								a._link(href="check-travel-ban.html") Проверить запрет на выезд
+							li._item
+								a._link(href="contacts.html") Контакты
+				._bottom-line
+					a.b-email._email(href="mailto:info@rudolgi.com")
+						span._icon-wrap
+							+icon('email')
+						span._text info@rudolgi.com
+					._text.text dolgi.net.© 2016-2020
 

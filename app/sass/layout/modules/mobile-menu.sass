@@ -1,0 +1,36 @@
+.mobile-menu
+	+min_lg
+		display: none
+	+lg
+		position: absolute
+		top: 87px
+		left: 0
+		width: 100%
+		height: calc( 100vh - 87px )
+		background: #fff
+		transform: translateY(calc(-100% - 87px))
+		transition: all 0.5s ease
+		z-index: 10
+	&.opened
+		transform: translateY(0)
+
+	&__container
+		height: 100%
+
+	&__wrap
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		padding-top: 50px
+		padding-bottom: 25px
+
+	&__top-line
+
+	&__bottom-line
+
+	&__email
+		margin-bottom: 15px
+
+	&__text
+		color: $c2

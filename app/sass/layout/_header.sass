@@ -1,6 +1,9 @@
 .header
 	padding: 25px 0
 	background: #fff
+	+lg
+		padding: 20px 0
+
 	&--other
 		border-bottom: 1px solid $bg3
 
@@ -10,3 +13,23 @@
 
 	&__col
 		padding: 0 20px
+		&--left
+			+min_lg
+				flex-basis: 42%
+				max-width: 42%
+			+lg
+				flex-basis: 80%
+				max-width: 80%
+		&--right
+			flex-basis: 58%
+			max-width: 58%
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			+lg
+				flex-basis: 20%
+				max-width: 20%
+
+	&__nav
+		+lg
+			display: none
