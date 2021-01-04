@@ -2,12 +2,13 @@
 	background: #FFFFFF
 	border: 2px solid $accent
 	border-radius: 3px
-	padding: 41px 48px
+	padding: 41px 48px 48px 48px
 
 	&__text
 		margin-bottom: 33px
 
 	&__header
+		margin-bottom: 30px
 		&-row
 			display: flex
 			justify-content: space-between
@@ -20,3 +21,63 @@
 			&--right
 				flex-basis: 19.43%
 				max-width: 19.43%
+				padding-top: 7px
+
+	&__notification
+		display: flex
+		align-items: center
+		margin-top: 21px
+		&-icon-wrap
+			display: flex
+			align-items: center
+			width: 15px
+			height: 15px
+			min-width: 15px
+			min-height: 15px
+			margin-right: 11px
+			svg
+				fill: $accent2
+				width: 100%
+				height: 100%
+		&-text
+			font-size: 15px
+			line-height: 15px
+			color: $c2
+
+	&__content
+		margin-bottom: -1px
+
+	&__footer
+		padding-top: 35px
+		border-top: 1px solid $bg3
+		&-row
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+		&-col
+			&--left
+				flex-basis: 70%
+				max-width: 70%
+			&--right
+				flex-basis: 30%
+				max-width: 30%
+
+	&__input
+		margin-right: -3px
+		.input__input
+			padding-right: 26px
+			padding-left: 17px
+		&:not(:last-child)
+			margin-bottom: 0
+		&-wrap
+			display: flex
+			align-items: center
+
+	&__yellow-btn
+		margin-left: -4px
+		margin-right: 19px
+
+	&__small-text
+		color: $c4
+		line-height: 13px

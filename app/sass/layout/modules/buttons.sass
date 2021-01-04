@@ -1,5 +1,5 @@
 ////////// Default btn
-.accent-btn
+.btn
 	position: relative
 	display: flex
 	align-items: center
@@ -7,34 +7,61 @@
 	font-weight: 600
 	font-size: 17px
 	line-height: 17px
-	color: #fff
 	text-align: center
 	text-decoration: none
 	padding: 15.5px 30px
-	background-color: $accent
 	border: none
 	outline: none
 	transition: all .3s ease
 	white-space: nowrap
 	border-radius: 2px
-	&:focus:not(.disabled),
-	&:hover:not(.disabled)
-		outline: none
-		cursor: pointer
-		color: #fff
-		text-decoration: none
-		background-color: $hover
-	&:active:not(.disabled)
-		background-color: #018F60
-
 	&.disabled
 		opacity: .4
-
 		user-select: none
+
+	&--accent
+		color: #fff
+		background-color: $accent
+		&:focus:not(.disabled),
+		&:hover:not(.disabled)
+			outline: none
+			cursor: pointer
+			color: #fff
+			text-decoration: none
+			background-color: $hover
+		&:active:not(.disabled)
+			background-color: #018F60
+
+	&--yellow
+		color: $c1
+		background-color: $accent2
+		&:focus:not(.disabled),
+		&:hover:not(.disabled)
+			outline: none
+			cursor: pointer
+			color: $c1
+			text-decoration: none
+			background-color: lighten($accent2, 8%)
+		&:active:not(.disabled)
+			background-color: darken($accent2, 8%)
+
+	&--small
+		padding: 16.5px 24.1px
+		font-size: 15px
+		line-height: 15px
+
 	&--left-icon
-		.accent-btn
+		.btn
 			&__icon-wrap
 				margin-right: 8px
+	&--arrow-right
+		svg
+			transform: rotate(180deg)
+
+	&--right-icon
+		.btn
+			&__icon-wrap
+				margin-left: 8px
 
 	&--full-width
 		width: 100%

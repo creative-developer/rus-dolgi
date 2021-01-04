@@ -16,11 +16,17 @@ section.b-debt-checker
 							._value 4
 						ul.b-data-info
 							li._item
-								._title.xl-body Результаты по данным:
+								._title
+									span._title-text.xl-body Результаты по данным:
 								._value.xxl-body Филиппова Людмила Викторовна , 05.04.1955 гр.
 							li._item
-								._title.xl-body Регион поиска:
+								._title
+									span._title-text.xl-body Регион поиска:
 								._value.xxl-body Алтайский край
+						._notification
+							._notification-icon-wrap
+								+icon('warning')
+							._notification-text По указанным данным нет активных исполнительных производств
 					._header-col.-right
 						.b-info-logo
 							._header
@@ -32,4 +38,107 @@ section.b-debt-checker
 									img._img(src="img/main/main-logo.png" alt="")
 								._desc Данные о задолженностях предоставляются из базы Федеральной службы судебных приставов
 			._content
+				.b-debt
+					.b-text._text
+						._title Должник:
+						._value #1
+					._title.xxl-body ФИЛИППОВА ЛЮДМИЛА ВИКТОРОВНА 05.04.1955 РОССИЯ, АСТРАХАНСКАЯ ОБЛАСТЬ, Г. КАПУСТИН ЯР
+					.b-debt-table
+						._row
+							._col.-left
+								._title Номер и дата испол. производства:
+							._col.-right
+								._value
+									span 16214/19/78024-ИП от 25.02.2019
+						._row
+							._col.-left
+								._title Реквизиты испол. документа:
+							._col.-right
+								._value
+									span Судебный приказ от 09.06.2017 № 2А-307/2017-19СУДЕБНЫЙ УЧАСТОК № 19 Г. САНКТ-ПЕТЕРБУРГА
+						._row
+							._col.-left
+								._title Дата и причина прекращения:
+							._col.-right
+								._value
+									span 2020-06-30 ст. 46ч. 1п. 3
+									a.b-underline-link.-small._link(href="#") что это за статья?
+						._row
+							._col.-left
+								._title Предмет исполнения:
+							._col.-right
+								._value
+									span Взыскание налогов и сборов, включая пени
+						._row
+							._col.-left
+								._title Отдел судебных приставов:
+							._col.-right
+								._value
+									span Западный ОСП Приморского р-на197373, Санкт-Петербург, Долгоозерная, 3 к3
+						._row
+							._col.-left
+								._title Пристав-исполнитель:
+							._col.-right
+								._value
+									span ФЛЕЙСНЕР О. Е. +7(812)318-21-83 +7(812)318-21-81 +7(812)318-21-80
+				.b-debt
+					.b-text._text
+						._title Должник:
+						._value #2
+					._title.xxl-body ФИЛИППОВА ЛЮДМИЛА ВИКТОРОВНА 05.04.1955 РОССИЯ, АСТРАХАНСКАЯ ОБЛАСТЬ, Г. КАПУСТИН ЯР
+					.b-debt-table
+						._row
+							._col.-left
+								._title Номер и дата испол. производства:
+							._col.-right
+								._value
+									span 16214/19/78024-ИП от 25.02.2019
+						._row
+							._col.-left
+								._title Реквизиты испол. документа:
+							._col.-right
+								._value
+									span Исполнительный лист от 06.06.2019 № ФС № 029270974Постановление о взыскании исполнительского сбора
+						._row
+							._col.-left
+								._title Дата и причина прекращения:
+							._col.-right
+								._value
+									a.b-underline-link.-small._link(href="#") что это за статья?
+						._row
+							._col.-left
+								._title Предмет исполнения:
+							._col.-right
+								._value
+									span Иные взыскания имущественного характера в пользу физических и юридических лиц: 1477851.65 руб.
+						._row
+							._col.-left
+								._title Отдел судебных приставов:
+							._col.-right
+								._value
+									span Отдел судебных приставов по Центральному району191028, Россия, г. Санкт-Петербург, , , , ул. Кирочная, 10
+						._row
+							._col.-left
+								._title Пристав-исполнитель:
+							._col.-right
+								._value
+									span ГАВРИЛОВА П. И. +7(812)571-69-44
+					._btn-wrap
+						a.b-btn.-accent.-right-icon.-arrow-right.-full-width._accent-btn(href="#")
+							span._text Оплатить 1 000.00 руб.
+							span._icon-wrap
+								+icon('arrow')
 			._footer
+				._footer-row
+					._footer-col.-left
+						._input-wrap
+							.b-input._input
+								input._input(type="text" name="fullname" placeholder="Введите E-mail")
+							button.b-btn.-yellow.-small._yellow-btn Напомнить о долгах
+							._small-text.xsm-body Раз в месяц мы будем напоминать вам <br>о проверках ваших задолженностей
+					._footer-col.-right
+						button.b-btn.-accent.-left-icon.-full-width._accent-btn
+							span._icon-wrap
+								+icon('search')
+							span._text Выполнить новый поиск
+
