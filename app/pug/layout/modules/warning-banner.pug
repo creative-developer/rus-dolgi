@@ -1,13 +1,26 @@
-.b-warning-banner
-	._row
-		._col.-left
-			._title Внимание!
-			._desc Возможно по вашему ФИО пограничные службы установили запрет на выезд за границу. Проверить наличие на выезд за границу можно нажав на кнопку ниже
-			._small-text Запрет на выезд может накладываться согласно № 229-ФЗ от 02.10.2007
-			a.b-btn._btn(href="#")
-				span._text Проверить
-				span._icon-wrap
-					+icon('arrow-right')
-		._col.-right
-			._img-wrap
-				img._img(src="img/others/state-border.png" alt="")
+form.b-warning-banner
+	._img-wrap
+		img._img(src="img/icons/court-icon.svg" alt="")
+	._content
+		._top-line
+			._title-wrap
+				h3._title 
+					| Ваша задолженность превышает сумму
+					b 300 000 рублей.
+				._sub-title.xxl-body Вам доступна процедура официального списания ваших задолженностей.
+			._desc.text Процедура банкротства физического лица проводится в рамках ФЗ №127 от 26.10.2002 г.
+		._bottom-line
+			._label.xl-body Заполните контактную информацию для связи с юристом.
+			._row
+				._col.-first
+					.b-input._input
+						input._input(type="text" name="fullname" placeholder="ФИО" value="Филиппова Людмила Викторовна")
+				._col.-second
+					.b-input._input
+						input._input(type="text" name="phone" placeholder="+7 (___) ___-__-__")
+				._col.-third
+					.b-input._input
+						input._input(type="text" name="fullname" placeholder="Email")
+				._col.-fourth
+					button.b-btn.-yellow.-small.-full-width._yellow-btn Отправить
+

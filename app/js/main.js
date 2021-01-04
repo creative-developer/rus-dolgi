@@ -16,7 +16,7 @@ import { mapInit } from './modules/contactsMap'
 
 // initFunctions
 // menuInit()
-// inputsMaskInit()
+inputsMaskInit()
 popupsInit()
 datePickerInit()
 customSelectInit()
