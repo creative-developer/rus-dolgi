@@ -10,8 +10,12 @@ const MQ = $.mq.action
 export const mediaQueriesInit = () => {
   MQ(
     breakpoints.lg,
-    () => {},
-    () => {},
+    () => {
+      $('.main__col').append($('.main-form__logo-wrap'))
+    },
+    () => {
+      $('.main-form__col--right').append($('.main-form__logo-wrap'))
+    },
   )
   MQ(
     breakpoints.md,

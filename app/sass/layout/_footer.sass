@@ -1,67 +1,124 @@
 .footer
-	padding: 50px 0 26px
+	padding: 3.125rem 0 1.625rem
 	background: rgba(#E6EBEC, .35)
+	+sm
+		padding: 42px 0 20px
 
 	&__top-row
-		margin-bottom: 50px
+		margin-bottom: 3.125rem
+		+lg
+			margin-bottom: 40px
 
 	&__bottom-row
 		position: relative
 		align-items: center
-		padding-top: 25px
-		&:after
-			content: ''
-			position: absolute
-			top: 0
-			left: 50%
-			transform: translateX(-50%)
-			width: calc( 100% - 40px )
-			height: 1px
-			background: #EDEDED
+		+lg
+			flex-direction: column-reverse
+		+min_lg
+			padding-top: 25px
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+				width: calc( 100% - 40px )
+				height: 1px
+				background: #EDEDED
 
 	&__col
-		&--left
-			flex-basis: 19.9%
-			max-width: 19.9%
-		&--center
-			flex-basis: 56%
-			max-width: 56%
-		&--right
-			flex-basis: 24.1%
-			max-width: 24.1%
-			display: flex
-			justify-content: flex-end
+		+min_lg
+			&--left
+				flex-basis: 19.9%
+				max-width: 19.9%
+				+xl
+					flex-basis: 25%
+					max-width: 25%
+			&--center
+				flex-basis: 56%
+				max-width: 56%
+				+xl
+					flex-basis: 47%
+					max-width: 47%
+			&--right
+				display: flex
+				justify-content: flex-end
+				flex-basis: 24.1%
+				max-width: 24.1%
+				+xl
+					flex-basis: 28%
+					max-width: 28%
 
 	&__col
 		padding: 0 20px
-		&--first
-			flex-basis: 19.9%
-			max-width: 19.9%
-		&--second
-			flex-basis: 40%
-			max-width: 40%
-		&--third
+		+lg
 			display: flex
-			justify-content: flex-end
-			flex-basis: 40%
-			max-width: 40%
+			flex-direction: column
+			align-items: center
+			flex-basis: 100%
+			max-width: 100%
+			width: 100%
+
+		+min_lg
+			&--first
+				flex-basis: 19.9%
+				max-width: 19.9%
+				+xl
+					flex-basis: 25%
+					max-width: 25%
+
+			&--second
+				flex-basis: 40%
+				max-width: 40%
+				+xl
+					flex-basis: 35%
+					max-width: 35%
+
+			&--third
+				display: flex
+				justify-content: flex-end
+				flex-basis: 40%
+				max-width: 40%
+				+xl
+					flex-basis: 40%
+					max-width: 40%
 
 	&__title
 		margin-bottom: 15px
+		br
+			+min_sm
+				display: none
+		+lg
+			text-align: center
+
+	&__logo
+		+lg
+			margin-bottom: 40px
 
 	&__desc
 		color: $c2
+		+lg
+			text-align: center
+			margin-bottom: 50px
 
 	&__politics-wrap
 		display: flex
 		align-items: center
+		+lg
+			margin-bottom: 40px
+			flex-direction: column
 
 	&__link
 		font-size: 12px
 		line-height: 12px
 		color: $c2
 		&:not(:last-child)
-			margin-right: 16px
+			+min_lg
+				margin-right: 16px
+				+xl
+					margin-right: 8px
+			+lg
+				margin-bottom: 10px
 		&:hover
 			color: $accent
 
@@ -69,18 +126,45 @@
 		font-size: 12px
 		line-height: 12px
 		color: $c2
+		+lg
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			padding-top: 20px
+			border-top: 1px solid #EDEDED
 
 	&__icons-wrap
 		display: flex
 		align-items: center
+		+lg
+			flex-direction: column-reverse
+			align-items: center
+			margin-bottom: 35px
 
 	&__icon-wrap
 		display: flex
 		align-items: center
-		&:not(:last-child)
-			margin-right: 47px
+		+min_lg
+			&:not(:last-child)
+				margin-right: 47px
+				+xl
+					margin-right: 20px
+		+lg
+			&:not(:first-child)
+				margin-bottom: 20px
 
 	&__email
 		margin-bottom: 16px
+		+lg
+			margin-bottom: 20px
 
-	&__nav-wrap
+	&__nav
+		.nav
+			&__list
+				+lg
+					align-items: center
+			&__item
+				&:not(:last-child)
+					+lg
+						margin-bottom: 15px

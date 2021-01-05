@@ -11,6 +11,8 @@
 			align-items: center
 			width: 47px
 			height: 47px
+			min-width: 47px
+			min-height: 47px
 			margin-right: 20px
 
 	&__title
@@ -23,7 +25,11 @@
 		font-size: 11px
 		line-height: 13px
 		color: $c4
-		max-width: 192px
+		+min_lg
+			max-width: 192px
+		+lg
+			text-align: center
+			max-width: 210px
 
 	&--hor
 		display: flex
@@ -38,6 +44,9 @@
 					display: none
 
 	&--ver
+		display: flex
+		flex-direction: column
+		align-items: center
 		.logo
 			&__link
 				margin-bottom: 20px

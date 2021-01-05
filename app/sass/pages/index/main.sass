@@ -1,9 +1,20 @@
 .main
 	background: $bg3
-	padding: 81px 0 71px
+	padding: 5.0625rem 0 4.4375rem
+	+sm
+		padding: 30px 0
 
 	&__title
 		margin-bottom: 19px
 
 	&__desc
 		margin-bottom: 38px
+		+sm
+			text-align: center
+			margin-bottom: 30px
+			br
+				display: none
+
+	&__form
+		+lg
+			margin-bottom: 20px
