@@ -1,34 +1,53 @@
 .debt-table
 	&__row
 		display: flex
-		align-items: center
-		padding: 13.5px 20px
+		align-items: flex-start
+		padding: 11px 20px
+		+lg
+			margin: 0 -8px
+			padding: 11px 7px
+
 		&:nth-child(odd)
 			background-color: rgba(#C4C4C4, 0.15)
 
 	&__col
 		&--left
-			flex-basis: 24.4%
-			max-width: 24.4%
+			flex-basis: 22.8%
+			max-width: 22.8%
+			margin-right: 15px
+			+lg
+				flex-basis: 42.8%
+				max-width: 42.8%
+				margin-right: 8px
 		&--right
-			flex-basis: 75.6%
-			max-width: 75.6%
+			flex-basis: calc( 77.2% - 15px )
+			max-width: calc( 77.2% - 15px )
+			+lg
+				flex-basis: calc( 57.2% - 8px )
+				max-width: calc( 57.2% - 8px )
 
 	&__title
 		font-size: 13px
 		line-height: 13px
 		color: $c2
+		+lg
+			br
+				display: none
 
 	&__value
 		display: flex
 		align-items: center
+		flex-wrap: wrap
 		font-size: 13px
-		line-height: 13px
+		line-height: 18px
 		font-weight: 600
 		color: $c1
+		+lg
 		span
 			&:not(:last-child)
 				margin-right: 38px
+				+lg
+					margin-right: 10px
 
 	&__link
 		line-height: 13px

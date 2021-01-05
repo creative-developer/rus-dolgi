@@ -3,6 +3,12 @@
 	border: 2px solid $accent
 	border-radius: 3px
 	padding: 41px 48px 48px 48px
+	+xl
+		padding: 30px
+	+lg
+		padding: 30px 20px
+	+sm
+		padding: 30px 15px
 
 	&__text
 		margin-bottom: 33px
@@ -18,10 +24,28 @@
 			&--left
 				flex-basis: 80.57%
 				max-width: 80.57%
+				+xl
+					flex-basis: 74%
+					max-width: 74%
+				+lg
+					flex-basis: 100%
+					max-width: 100%
+
 			&--right
 				flex-basis: 19.43%
 				max-width: 19.43%
 				padding-top: 7px
+				+xl
+					flex-basis: 26%
+					max-width: 26%
+				+lg
+					display: none
+
+	&__text-wrap
+		+lg
+			display: flex
+			flex-direction: column
+			align-items: center
 
 	&__notification
 		display: flex
@@ -56,28 +80,54 @@
 			justify-content: space-between
 			align-items: center
 		&-col
-			&--left
-				flex-basis: 70%
-				max-width: 70%
-			&--right
-				flex-basis: 30%
-				max-width: 30%
+			+lg
+				flex-basis: 100%
+				max-width: 100%
+			+min_lg
+				&--left
+					flex-basis: 70%
+					max-width: 70%
+				&--right
+					flex-basis: 30%
+					max-width: 30%
 
 	&__input
-		margin-right: -3px
-		.input__input
-			padding-right: 26px
-			padding-left: 17px
+		+min_lg
+			margin-right: -3px
+			.input__input
+				padding-right: 26px
+				padding-left: 17px
+		+lg
+			width: 100%
 		&:not(:last-child)
 			margin-bottom: 0
+			+lg
+				margin-bottom: 10px
 		&-wrap
 			display: flex
 			align-items: center
+			+lg
+				flex-direction: column
 
 	&__yellow-btn
-		margin-left: -4px
-		margin-right: 19px
+		+min_lg
+			margin-left: -4px
+			margin-right: 19px
+		+lg
+			width: 100%
+			margin-bottom: 10px
+
+	&__accent-btn
+		margin-bottom: 20px
 
 	&__small-text
 		color: $c4
 		line-height: 13px
+		+xl
+			width: 30%
+			br
+				display: none
+		+lg
+			width: 100%
+			text-align: center
+			margin-bottom: 30px

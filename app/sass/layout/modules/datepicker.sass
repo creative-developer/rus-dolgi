@@ -5,13 +5,15 @@
 		color: #fff
 	&.picked
 		color: #fff !important
-		&:hover
-			color: $accent
-	&.highlighted
 		background: $accent
-		color: #fff !important
 		&:hover
 			background: lighten($accent, 10%)
+	&.highlighted
+		color: $accent !important
+		background: #f9f9f9
+		&:hover
+			background: lighten($accent, 10%)
+			color: #fff !important
 
 	&.picked, .datepicker-panel>ul>li.picked:hover
 		color: $accent

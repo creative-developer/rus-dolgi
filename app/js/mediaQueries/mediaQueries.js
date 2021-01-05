@@ -12,9 +12,15 @@ export const mediaQueriesInit = () => {
     breakpoints.lg,
     () => {
       $('.main__col').append($('.main-form__logo-wrap'))
+      $('.debt-checker-form__text-wrap').prepend($('.info-logo__header'))
+      $('.debt-checker-form__footer-col--right').append(
+        $('.info-logo__content'),
+      )
     },
     () => {
       $('.main-form__col--right').append($('.main-form__logo-wrap'))
+      $('.info-logo').prepend($('.info-logo__header'))
+      $('.info-logo').append($('.info-logo__content'))
     },
   )
   MQ(

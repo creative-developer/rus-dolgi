@@ -5,17 +5,34 @@
 	border: 2px solid #FFC36E
 	padding: 43px 40px 48px 33px
 	margin: 40px 0 40px
+	+xl
+		padding: 30px 25px
+	+lg
+		flex-direction: column
+		align-items: center
+		padding: 30px 20px 20px
+	+sm
+		padding: 30px 15px 20px
 
 	&__img
 		&-wrap
 			display: flex
 			align-items: center
-			width: 88px
-			height: 82px
-			min-width: 88px
-			min-height: 82px
-			margin-top: 10px
-			margin-right: 37px
+			width: 5.5rem
+			height: 5.125rem
+			min-width: 5.5rem
+			min-height: 5.125rem
+			+min_lg
+				margin-top: 10px
+				margin-right: 37px
+				+xl
+					margin-right: 20px
+			+lg
+				margin-bottom: 20px
+				width: 88px
+				height: 82px
+				min-width: 88px
+				min-height: 82px
 
 	&__content
 		width: 100%
@@ -25,27 +42,42 @@
 		align-items: flex-start
 		justify-content: space-between
 		margin-bottom: 28px
+		+lg
+			flex-direction: column
+			align-items: center
 
 	&__title
 		margin-bottom: 1px
 		b
 			margin-left: 4px
-		&-wrap
+		+xl
+			font-size: 19px
+			line-height: 22px
+		+lg
+			text-align: center
+			margin-bottom: 10px
 
 	&__sub-title
 		color: $c1
+		+lg
+			text-align: center
 
 	&__desc
-		max-width: 225px
-		text-align: center
 		line-height: 18px
-		padding-top: 13px
-
-	&__bottom-line
+		text-align: center
+		+min_lg
+			padding-top: 13px
+			max-width: 225px
+			+xl
+				max-width: 190px
+		+lg
+			display: none
 
 	&__label
 		color: $c3
 		margin-bottom: 14px
+		+lg
+			text-align: center
 
 	&__row
 		display: flex
@@ -55,17 +87,23 @@
 
 	&__col
 		padding: 0 7.5px
-		&--first
-			flex-basis: 32.8%
-			max-width: 32.8%
-		&--second
-			flex-basis: 24.4%
-			max-width: 24.4%
-		&--third
-			flex-basis: 24.4%
-			max-width: 24.4%
-		&--fourth
-			flex-basis: 18.4%
-			max-width: 18.4%
+		+lg
+			flex-basis: 100%
+			max-width: 100%
+		&:not(:last-child)
+			+lg
+				margin-bottom: 15px
 
-	&__input
+		+min_lg
+			&--first
+				flex-basis: 32.8%
+				max-width: 32.8%
+			&--second
+				flex-basis: 24.4%
+				max-width: 24.4%
+			&--third
+				flex-basis: 24.4%
+				max-width: 24.4%
+			&--fourth
+				flex-basis: 18.4%
+				max-width: 18.4%
